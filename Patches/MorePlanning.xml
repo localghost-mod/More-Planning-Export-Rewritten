@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Planning"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>MorePlanningExportRewritten.ExportDesignator</li>
+      <li>MorePlanningExportRewritten.ImportDesignator</li>
+      <li>MorePlanningExportRewritten.DeleteDesignator</li>
+    </value>
+  </Operation>
+
+</Patch>

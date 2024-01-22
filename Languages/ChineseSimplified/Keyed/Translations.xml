@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <MorePlanningExport.PlanExport>导出计划</MorePlanningExport.PlanExport>
+    <MorePlanningExport.PlanExportDesc>导出计划数据到本地文件夹，可用导入计划在其他存档使用</MorePlanningExport.PlanExportDesc>
+
+    <MorePlanningExport.PlanImport>导入计划</MorePlanningExport.PlanImport>
+    <MorePlanningExport.PlanImportDesc>从已导出的计划中导入计划</MorePlanningExport.PlanImportDesc>
+
+    <MorePlanningExport.PlanDelete>删除计划</MorePlanningExport.PlanDelete>
+    <MorePlanningExport.PlanDeleteDesc>删除导出到本地的计划</MorePlanningExport.PlanDeleteDesc>
+
+</LanguageData>

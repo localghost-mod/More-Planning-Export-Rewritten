@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <MorePlanningExport.PlanExport>Export Plan</MorePlanningExport.PlanExport>
+    <MorePlanningExport.PlanExportDesc>Export plan data to local folder, which can be used in other saves by Import Plan</MorePlanningExport.PlanExportDesc>
+
+    <MorePlanningExport.PlanImport>Import Plan</MorePlanningExport.PlanImport>
+    <MorePlanningExport.PlanImportDesc>Import plans from exported plans</MorePlanningExport.PlanImportDesc>
+
+    <MorePlanningExport.PlanDelete>Delete Plan</MorePlanningExport.PlanDelete>
+    <MorePlanningExport.PlanDeleteDesc>Delete plans exported locally</MorePlanningExport.PlanDeleteDesc>
+
+</LanguageData>
