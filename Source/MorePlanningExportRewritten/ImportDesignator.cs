@@ -17,10 +17,7 @@ namespace MorePlanningExportRewritten
             icon = ContentFinder<Texture2D>.Get("MorePlanningExport/PlanImport");
         }
 
-        public static ImportCommand importCommand = (ImportCommand)
-            TypeByName("MorePlanning.Designators.ImportCommand")
-                ?.GetConstructor(new Type[] { })
-                .Invoke(new object[] { });
+        public static ImportCommand importCommand = (ImportCommand)TypeByName("MorePlanning.Designators.ImportCommand")?.GetConstructor(new Type[] { }).Invoke(new object[] { });
 
         public override AcceptanceReport CanDesignateCell(IntVec3 loc) => !Plannings.Empty();
 

@@ -8,10 +8,7 @@ namespace MorePlanningExportRewritten
 {
     internal class ExportDesignator : Designator
     {
-        static ExportCommand exportCommand = (ExportCommand)
-            TypeByName("MorePlanning.Designators.ExportCommand")
-                ?.GetConstructor(new Type[] { })
-                .Invoke(new object[] { });
+        static ExportCommand exportCommand = (ExportCommand)TypeByName("MorePlanning.Designators.ExportCommand")?.GetConstructor(new Type[] { }).Invoke(new object[] { });
 
         public ExportDesignator()
             : base()

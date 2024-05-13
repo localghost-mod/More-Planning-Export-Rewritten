@@ -17,15 +17,6 @@ namespace MorePlanningExportRewritten
         public override AcceptanceReport CanDesignateCell(IntVec3 loc) => !Plannings.Empty();
 
         public override void ProcessInput(Event ev) =>
-            Find.WindowStack.Add(
-                new FloatMenu(
-                    Plannings
-                        .GetPlannings()
-                        .Select(
-                            pair => new FloatMenuOption(pair.Key, () => Plannings.Del(pair.Key))
-                        )
-                        .ToList()
-                )
-            );
+            Find.WindowStack.Add(new FloatMenu(Plannings.GetPlannings().Select(pair => new FloatMenuOption(pair.Key, () => Plannings.Del(pair.Key))).ToList()));
     }
 }

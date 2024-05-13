@@ -8,20 +8,14 @@ namespace MorePlanningExportRewritten
 {
     public static class Plannings
     {
-        static string saveLocation = Path.Combine(
-            GenFilePaths.SaveDataFolderPath,
-            "MorePlanningExportRewritten/savedPlannings.xml"
-        );
+        static string saveLocation = Path.Combine(GenFilePaths.SaveDataFolderPath, "MorePlanningExportRewritten/savedPlannings.xml");
 
         static void Serialize()
         {
             var serializer = new XmlSerializer(typeof(List<Entry>));
             Directory.CreateDirectory(Path.GetDirectoryName(saveLocation));
             var filestream = new FileStream(saveLocation, FileMode.Create);
-            serializer.Serialize(
-                filestream,
-                _plannings.Select(planning => new Entry(planning.Key, planning.Value)).ToList()
-            );
+            serializer.Serialize(filestream, _plannings.Select(planning => new Entry(planning.Key, planning.Value)).ToList());
             filestream.Close();
         }
 
@@ -32,10 +26,7 @@ namespace MorePlanningExportRewritten
                 return;
             var serializer = new XmlSerializer(typeof(List<Entry>));
             var filestream = new FileStream(saveLocation, FileMode.Open);
-            _plannings = ((List<Entry>)serializer.Deserialize(filestream)).ToDictionary(
-                entry => entry.Name,
-                entry => entry.Value
-            );
+            _plannings = ((List<Entry>)serializer.Deserialize(filestream)).ToDictionary(entry => entry.Name, entry => entry.Value);
             filestream.Close();
         }
 

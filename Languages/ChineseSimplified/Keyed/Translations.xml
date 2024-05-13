@@ -10,4 +10,5 @@
     <MorePlanningExport.PlanDelete>删除计划</MorePlanningExport.PlanDelete>
     <MorePlanningExport.PlanDeleteDesc>删除导出到本地的计划</MorePlanningExport.PlanDeleteDesc>
 
+    <MorePlanningExport.PlanName>计划名</MorePlanningExport.PlanName>
 </LanguageData>

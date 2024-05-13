@@ -10,4 +10,5 @@
     <MorePlanningExport.PlanDelete>Delete Plan</MorePlanningExport.PlanDelete>
     <MorePlanningExport.PlanDeleteDesc>Delete plans exported locally</MorePlanningExport.PlanDeleteDesc>
 
+    <MorePlanningExport.PlanName>Plan Name</MorePlanningExport.PlanName>
 </LanguageData>
